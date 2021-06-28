@@ -6,6 +6,9 @@ export class Node {
   public name: string = "Node";
   public id: string = generateId()
   public icon: string;
+  public app: string;
+  public action: string;
+  public formData: object;
   public position: Point = new Point();
   public selected: boolean = false;
   public highlightInPort: boolean = false;

@@ -27,6 +27,9 @@ export type SerializedNode = {
   name: string;
   id: string;
   icon: string;
+  app: string;
+  action: string;
+  formData: object;
   position: SerializedPoint;
 };
 export type SerializedConnection = {
