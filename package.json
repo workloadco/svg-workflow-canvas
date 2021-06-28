@@ -34,7 +34,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "lodash": "^4.17.20"
+    "lodash": "^4.17.20",
+    "tslib": "^2.3.0"
   },
   "peerDependencies": {
     "react": "^16.13.1",
