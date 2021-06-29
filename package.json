@@ -1,22 +1,14 @@
 {
-  "name": "svg-workflow-canvas",
-  "version": "1.2.1",
-  "description": "Generic workflow builder react component using an SVG canvas",
-  "keywords": [
-    "workflow",
-    "workflow component",
-    "workflow builder",
-    "workflow designer",
-    "pipeline",
-    "component",
-    "ui",
-    "svg",
-    "react"
-  ],
-  "author": "Alex Stanciu <astanciu@gmail.com> (http://github.com/astanciu)",
+  "name": "svg-canvas-editor-tool",
+  "version": "1.2.6",
+  "description": "Generic workflow builder",
+  "author": "Bryan",
   "license": "MIT",
-  "repository": "astanciu/svg-workflow-canvas",
-  "homepage": "https://astanciu.github.io/svg-workflow-canvas",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astanciu/svg-workflow-canvas.git"
+  },
+  "homepage": "http://bryan.com",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -67,5 +59,11 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "directories": {
+    "example": "example"
+  },
+  "bugs": {
+    "url": "https://github.com/astanciu/svg-workflow-canvas/issues"
+  }
 }

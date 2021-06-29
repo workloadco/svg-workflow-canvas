@@ -28,6 +28,8 @@ export type SerializedNode = {
   id: string;
   icon: string;
   app: string;
+  label: string;
+  credential: string;
   action: string;
   formData: object;
   position: SerializedPoint;
