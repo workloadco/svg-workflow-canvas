@@ -11,6 +11,7 @@ export class Node {
   public credential: string;
   public action: string;
   public formData: object;
+  public testData: object;
   public position: Point = new Point();
   public selected: boolean = false;
   public highlightInPort: boolean = false;

@@ -9,7 +9,7 @@ export class WorkflowData {
   static loadState(jsonWorkflow: SerializedWorkflow, options) {
     const state: State = {
       id: jsonWorkflow.id || generateId(),
-      workflowName: jsonWorkflow.name || 'Workflow',
+      workflowName: jsonWorkflow.name || 'Draft Workflow',
       workflowDescription: jsonWorkflow.description || 'Generic workflow',
       nodes: [],
       connections: [],
@@ -116,7 +116,7 @@ export class WorkflowData {
 
   static insertNode(
     state: State,
-    data: { name: string; id: string; icon: string; app: string; label: string; credential: string; action: string; formData: object; }
+    data: { name: string; id: string; icon: string; app: string; label: string; credential: string; action: string; formData: object; testData: object; }
   ) {
     const node = new Node(data);
     node.position = WorkflowData.getNewPosition(state);
@@ -175,6 +175,7 @@ export class WorkflowData {
         credential: n.credential,
         action: n.action,
         formData: n.formData,
+        testData: n.testData,
         position: {
           x: n.position.x,
           y: n.position.y

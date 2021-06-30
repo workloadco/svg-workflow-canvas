@@ -32,6 +32,7 @@ export type SerializedNode = {
   credential: string;
   action: string;
   formData: object;
+  testData: object;
   position: SerializedPoint;
 };
 export type SerializedConnection = {
