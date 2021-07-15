@@ -3,7 +3,7 @@ import { generateId } from "../Util/Utils";
 import { Point } from "./Point";
 
 export class Node {
-  public name: string = "Node";
+  public name: string = "Click to Edit";
   public id: string = generateId()
   public icon: string;
   public app: string;
@@ -51,7 +51,7 @@ export class Node {
 
   getRandomIcon() {
     const icons = Object.keys(IconLibrary);
-    const iconName = icons[(icons.length * Math.random()) << 0];
+    const iconName = 'plus-circle';
 
     return iconName;
   }

@@ -21,7 +21,7 @@ type Props = {
 };
 
 class NodeComponent extends React.Component<Props> {
-  static displayName = 'Node';
+  static displayName = 'Click to Edit';
   static defaultProps = {
     snapToGrid: true
   };
