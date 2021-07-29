@@ -9,6 +9,7 @@ export class WorkflowData {
   static loadState(jsonWorkflow: SerializedWorkflow, options) {
     const state: State = {
       id: jsonWorkflow.id || generateId(),
+      active: jsonWorkflow.active || false,
       workflowName: jsonWorkflow.name || 'Draft Workflow',
       workflowDescription: jsonWorkflow.description || 'Generic workflow',
       nodes: [],
@@ -164,6 +165,7 @@ export class WorkflowData {
   static export(state: State): SerializedWorkflow {
     const workflow: SerializedWorkflow = {
       id: state.id,
+      active: state.active,
       name: state.workflowName,
       description: state.workflowDescription,
       nodes: state.nodes.map(n => ({
@@ -176,6 +178,7 @@ export class WorkflowData {
         action: n.action,
         formData: n.formData,
         testData: n.testData,
+        metaData: n.metaData,
         position: {
           x: n.position.x,
           y: n.position.y

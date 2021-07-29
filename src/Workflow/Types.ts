@@ -2,6 +2,7 @@ import { Connection, Node } from '../Canvas/Models';
 
 export type State = {
   id: string;
+  active: boolean;
   workflowName: string;
   workflowDescription: string;
   nodes: Node[];
@@ -33,6 +34,7 @@ export type SerializedNode = {
   action: string;
   formData: object;
   testData: object;
+  metaData: object;
   position: SerializedPoint;
 };
 export type SerializedConnection = {
@@ -42,6 +44,7 @@ export type SerializedConnection = {
 };
 export type SerializedWorkflow = {
   id: string;
+  active: boolean;
   name: string;
   description: string;
   nodes: SerializedNode[];
