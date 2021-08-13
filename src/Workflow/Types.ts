@@ -29,6 +29,7 @@ export type SerializedNode = {
   id: string;
   icon: string;
   app: string;
+  nodetype: string;
   label: string;
   credential: string;
   action: string;

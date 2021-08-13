@@ -7,6 +7,7 @@ export class Node {
   public id: string = generateId()
   public icon: string;
   public app: string;
+  public nodetype: string;
   public label: string;
   public credential: string;
   public action: string;

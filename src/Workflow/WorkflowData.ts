@@ -173,6 +173,7 @@ export class WorkflowData {
         id: n.id,
         icon: n.icon,
         app: n.app,
+        nodetype: n.nodetype,
         label: n.label,
         credential: n.credential,
         action: n.action,
