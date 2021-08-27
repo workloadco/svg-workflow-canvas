@@ -117,7 +117,7 @@ export class WorkflowData {
 
   static insertNode(
     state: State,
-    data: { name: string; id: string; icon: string; app: string; label: string; credential: string; action: string; formData: object; testData: object; }
+    data: { name: string; id: string; icon: string; app: string; label: string; credential: string; action: string; actionlabel: string; authname: string; formData: object; testData: object; }
   ) {
     const node = new Node(data);
     node.position = WorkflowData.getNewPosition(state);
@@ -173,6 +173,8 @@ export class WorkflowData {
         id: n.id,
         icon: n.icon,
         app: n.app,
+        actionlabel: n.actionlabel,
+        authname: n.authname,
         nodetype: n.nodetype,
         label: n.label,
         credential: n.credential,

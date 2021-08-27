@@ -8,6 +8,8 @@ export class Node {
   public icon: string;
   public app: string;
   public nodetype: string;
+  public actionlabel: string;
+  public authname: string;
   public label: string;
   public credential: string;
   public action: string;
